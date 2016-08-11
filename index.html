@@ -1,57 +1,232 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Mycurriculavitae by seteny</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Mycurriculavitae</h1>
-      <h2 class="project-tagline">个人简历</h2>
-      <a href="https://github.com/seteny/myCurriculaVitae" class="btn">View on GitHub</a>
-      <a href="https://github.com/seteny/myCurriculaVitae/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/seteny/myCurriculaVitae/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+ <!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+  <title>个人简历</title>
+  <style >
+*{ margin: 0px;padding: 0px}
+ul,ol{list-style: none; padding: 0px 20px;}
+p{ font-size: 15px;  padding-top: 10px;}
+a:link,a:visited{color: white;text-decoration: none;position:relative;}
+h1, h2, h3, h4, h5, h6 {
+	font-family: georgia, palatino, "New Century Schoolbook",
+	times, serif;
+	font-weight: normal;
+	font-size: 2em;
+	margin-top: 1em;
+	margin-bottom: 0;
+	
+	}
+strong {
+	font-weight: bold;
+	font-style: normal;
+	}
 
-    <section class="main-content">
-      <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+img{border: 0;}
+body{
+  min-width: 200px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 17px;
+  font-family: Arial,宋体; color: white;
+    
+  background-image: url('img/backgroud3.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+	
+}
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
 
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Designer Templates</h3>
 
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
+#content{
+  padding: 20px;
+  width: 800px;
+  margin:0px auto;
+  background: rgba(255, 255, 255, 0.3) !important;
+  background: #fff;
+  filter: alpha(opacity=30);
+ 
+}
 
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating pages manually</h3>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+#titleName{
+  height: 300px;
 
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+  text-align: left;
+  font-size: 30px;
+ 	border: solid 1px red;
+ 	 position: relative;  
+ 	
+}
+#nav {
+	font-size: 15px;
+	width: 200px;
+	padding-top: 40px;
+	font-family: georgia;
+	
+}
+#myname {
+	width: 300px;
+	
+}
+.top{ height: 200px; line-height: 30px;}
+.top span{ padding: 0px;}
+.top ul{ float: right;}
 
-<p>You can @mention a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+.education { height: 100px;}
+.education span{ line-height: 50px;}
 
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
 
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
+.experience { height: 100px;}
+.experience span{ line-height: 50px;}
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/seteny/myCurriculaVitae">Mycurriculavitae</a> is maintained by <a href="https://github.com/seteny">seteny</a>.</span>
 
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
+.skill { height: 200px;}
+.skill span{line-height: 50px;}
+.skill li{ font-size: 15px;}
 
-    </section>
 
+.project { height: 1500px;}
+.project li{ padding-left: 0px;}
+.project ul { padding-top: 20px}
+
+.technique {font-size: 15px;}
+.technique li { float: left; width: 700px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px;}
+.technique ol { line-height: 100px;  padding-left: 160px;}
+
+
+
+  </style>
+
+
+
+
+</head>
+<body>
+<div id="content">
   
-  </body>
+
+<div id="titleName">
+	
+	<div id="myname">
+		<ul>
+		<h1 >LIJIN </h1>
+		<p align="right"><img src="img/sex.png" width="20px" /> 李进</p>
+		</ul>
+	</div>
+	<div id="nav">
+		<ul>
+			<li><a href="#toc_1">&bull;Personal</a></li>
+			<li><a href="#toc_2">&bull;Education</a></li>
+			<li><a href="#toc_3">&bull;Job Experience</a></li>
+			<li><a href="#toc_4">&bull;Skills</a></li>
+			<li><a href="#toc_5">&bull;Relevant Coursework</a></li>
+		</ul>
+	</div>
+  <ul>
+  <p align="right"><strong>iOS工程师</strong></p>
+  </ul>
+</div>
+
+<br/><hr/><br/>
+
+<div class="top">
+    <h2 id="toc_1"><img src="img/my.png" width="40px" align="center"/>  基本信息</h2>
+    <ul>
+      <p><img src="img/use.png"  alt="" align="center" width="25px"/>   23岁<br />
+      <img src="img/phone.png" alt=""  align="center" width="25px"/>   18672929793<br />
+      <img src="img/adress2.png" alt=""  align="center" width="25px"/>   湖北省&bull;武汉市<br />
+      <img src="img/emali.png" alt="" align="center" width="25px"/> <a href="mailto:seteny@126.com">seteny@126.com</a> </p>
+    </ul>
+</div>
+
+<br/><hr/><br/>
+
+<div class="education">
+    <h2 id="toc_2"><img src="img/book.png" width="40px" align="center"/>  教育背景</h2><br />
+    <ul>
+      <p>2010 - 2013年  荆州职业技术学院</p>
+    </ul>
+</div>
+
+<br/><hr/><br/>
+
+<div class="experience">
+      <h2 id="toc_3"><img src="img/job.png" width="40px" align="center"/>  实践经验</h2><br />
+      <ul>
+        <p>2014 - 2016年  顺丰速运集团有限公司</p>
+      </ul>
+</div>
+
+<br/><hr/><br/>
+
+<div class="skill">
+      <h2 id="toc_4"><img src="img/jineng.png" width="40px" align="center"/>  专业技能</h2><br />
+      <ul >
+        <p>
+        	&bull;  熟悉C,精通Objective-C等编程语言<br />
+        &bull;  熟练使用AFNetworking，SDWebImage，MBProgressHUD等框架,熟悉主流第三方SDK的使用,如百度社会化组件、百度地图、友盟等<br />
+        &bull;  精通 MVC、代理、单例、工厂、观察者等设计模式和KVO,delegate,Block,NSNotification等消息机制<br/>
+        &bull;  精通数据存储, 掌握偏好设置,归档等数据存储技术,熟练使用SQLite、CoreData等数据库技术
+        </p>
+      </ul>
+</div>
+
+<br/><hr/><br/>
+
+<div class="project">
+    <h2 id="toc_5"> <img src="img/xiangmu.png" width="40px" align="center"/>  iOS项目</h2>
+    <ul>
+      <li><strong>&bull; 项目一:</strong>
+      <ul>
+      	<img src="img/IMG_0002.jpg" width="140px" align="right" />
+      	  <p>&loz; 项目名称:  <b>医之佳</b></p>
+          <p>&loz; 项目描述:  <font size="3px">医之佳是零距离医生、医患移动诊疗沟通应用软件;应用主要提供给患者和医生使用;在应用中可以在线咨询医生,预约医生诊疗,问吧质询等服务.</font></p>
+          <p>&loz; 应用技术:</p>
+          <p>
+          		&radic; 实现第三方登陆及分享功能...<br />
+          		&radic; 实现界面优化<br />
+          		&radic; .....<br />
+          		&radic; ...<br />
+          		&radic; ...<br />
+          </p>
+          
+      </ul>
+      </li>
+      <br /><br /><br />
+      
+      <li><strong>&bull; 项目二: </strong>
+      	<ul>
+      		<img src="img/IMG_0001.jpg" width="140px" align="right" />
+            <p >&loz; 项目名称:</p>
+            <p >&loz; 项目描述:</p>
+            <p >&loz; 应用技术:</p>
+            <p>
+            &radic;	完成项目的主要UI框架搭建<br />
+            	&radic; 封装了一套完整的tabBar框架<br/>
+            &radic; 自定义的本地数据缓存机制大大提升了各客户端及服务器之间的通讯性能<br />
+            </p>
+       </ul>
+      </li>
+      <br /><br /><br />
+      
+      <li><strong>&bull; 项目三:</strong>
+      	<ul>
+      		<p >&loz; 项目名称:</p>
+            <p >&loz; 项目描述:</p>
+            <p >&loz; 应用技术:</p>
+      		
+      
+      		
+      	</ul>
+      </li>
+       <br /><br /><br />
+       
+    </ul>
+</div>
+
+</div>
+<hr/>
+</body>
 </html>
