@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-  <title>个人简历</title>
+  <title>我的个人简历</title>
   <style >
 *{ margin: 0px;padding: 0px}
 ul,ol{list-style: none; padding: 0px 20px;}
@@ -19,6 +19,7 @@ h1, h2, h3, h4, h5, h6 {
 strong {
 	font-weight: bold;
 	font-style: normal;
+	font-size: 1.5em;
 	}
 
 img{border: 0;}
@@ -28,7 +29,8 @@ body{
   margin: 0 auto;
   font-size: 17px;
   font-family: Arial,宋体; color: white;
-    
+  
+  background-color: rgb(195,180,180);
   background-image: url('https://github.com/seteny/myCurriculaVitae/blob/master/images/backgroud3.jpg?raw=true');
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -38,18 +40,17 @@ body{
 
 
 
-#content{
+div#box{
   padding: 20px;
   width: 800px;
   margin:0px auto;
   background: rgba(255, 255, 255, 0.3) !important;
   background: #fff;
   filter: alpha(opacity=30);
- 
 }
 
 
-#titleName{
+div#titleName{
   height: 300px;
 
   text-align: left;
@@ -58,41 +59,30 @@ body{
  	 position: relative;  
  	
 }
-#nav {
+div#nav {
 	font-size: 15px;
 	width: 200px;
 	padding-top: 40px;
 	font-family: georgia;
 	
 }
-#myname {
+div#myname {
 	width: 300px;
 	
 }
-.top{ height: 200px; line-height: 30px;}
-.top span{ padding: 0px;}
-.top ul{ float: right;}
 
-.education { height: 100px;}
-.education span{ line-height: 50px;}
+div#top{ height: 200px; line-height: 30px;}
+div#top ul{ float: right; width: 200px;border: 0px solid red;}
 
+div#education { height: 100px;}
 
-.experience { height: 100px;}
-.experience span{ line-height: 50px;}
+div#experience { height: 100px;}
 
+div#skill { height: 200px;}
 
-.skill { height: 200px;}
-.skill span{line-height: 50px;}
-.skill li{ font-size: 15px;}
-
-
-.project { height: 1500px;}
-.project li{ padding-left: 0px;}
-.project ul { padding-top: 20px}
-
-.technique {font-size: 15px;}
-.technique li { float: left; width: 700px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px;}
-.technique ol { line-height: 100px;  padding-left: 160px;}
+div#project { height: 1500px;}
+div#project p{ padding-left: 20px; border: 0px solid red;}
+div#technique { padding-left: 20px;border: 0px solid green; }
 
 
 
@@ -103,9 +93,8 @@ body{
 
 </head>
 <body>
-<div id="content">
+<div id="box">
   
-
 <div id="titleName">
 	
 	<div id="myname">
@@ -124,25 +113,35 @@ body{
 		</ul>
 	</div>
   <ul>
-  <p align="right"><strong>iOS工程师</strong></p>
+  <p align="right"><strong><b>iOS开发工程师</b></strong></p>
   </ul>
 </div>
 
 <br/><hr/><br/>
 
-<div class="top">
+<div id="top">
     <h2 id="toc_1"><img src="https://github.com/seteny/myCurriculaVitae/blob/master/images/my.png?raw=true" width="40px" align="center"/>  基本信息</h2>
+    <div id="top2">
+    	<ul>
+    	<p align="left"> 工作年限:二年<br />
+      期望薪资:面议<br />
+      到岗时间:二周之内<br />
+      </p>
+    	</ul>
+    </div>
     <ul>
-      <p><img src="https://github.com/seteny/myCurriculaVitae/blob/master/images//use.png?raw=true"  alt="" align="center" width="25px"/>   23岁<br />
-      <img src="https://github.com/seteny/myCurriculaVitae/blob/master/images//phone.png?raw=true" alt=""  align="center" width="25px"/>   18672929793<br />
-      <img src="https://github.com/seteny/myCurriculaVitae/blob/master/images//adress2.png?raw=true" alt=""  align="center" width="25px"/>   湖北省&bull;武汉市<br />
-      <img src="https://github.com/seteny/myCurriculaVitae/blob/master/images//emali.png?raw=true" alt="" align="center" width="25px"/> <a href="mailto:seteny@126.com">seteny@126.com</a> </p>
+      <p><img src="https://github.com/seteny/myCurriculaVitae/blob/master/images//use.png?raw=true"  alt="" align="center" width="25px"/>   年龄:23岁<br />
+      <img src="https://github.com/seteny/myCurriculaVitae/blob/master/images//phone.png?raw=true" alt=""  align="center" width="25px"/>   电话:18672929793<br />
+      <img src="https://github.com/seteny/myCurriculaVitae/blob/master/images//adress2.png?raw=true" alt=""  align="center" width="25px"/>   现居地:湖北省&bull;武汉市<br />
+      <img src="https://github.com/seteny/myCurriculaVitae/blob/master/images//emali.png?raw=true" alt="" align="center" width="25px"/> <a href="mailto:seteny@126.com">Email:seteny@126.com</a> 
+      </p>
     </ul>
+    
 </div>
 
 <br/><hr/><br/>
 
-<div class="education">
+<div id="education">
     <h2 id="toc_2"><img src="https://github.com/seteny/myCurriculaVitae/blob/master/images/book.png?raw=true" width="40px" align="center"/>  教育背景</h2><br />
     <ul>
       <p>2010 - 2013年  荆州职业技术学院</p>
@@ -151,7 +150,7 @@ body{
 
 <br/><hr/><br/>
 
-<div class="experience">
+<div id="experience">
       <h2 id="toc_3"><img src="https://github.com/seteny/myCurriculaVitae/blob/master/images/job.png?raw=true" width="40px" align="center"/>  实践经验</h2><br />
       <ul>
         <p>2014 - 2016年  顺丰速运集团有限公司</p>
@@ -160,7 +159,7 @@ body{
 
 <br/><hr/><br/>
 
-<div class="skill">
+<div id="skill">
       <h2 id="toc_4"><img src="https://github.com/seteny/myCurriculaVitae/blob/master/images/jineng.png?raw=true" width="40px" align="center"/>  专业技能</h2><br />
       <ul >
         <p>
@@ -174,23 +173,25 @@ body{
 
 <br/><hr/><br/>
 
-<div class="project">
+<div id="project">
     <h2 id="toc_5"> <img src="https://github.com/seteny/myCurriculaVitae/blob/master/images/xiangmu.png?raw=true" width="40px" align="center"/>  iOS项目</h2>
     <ul>
+    	<br />
       <li><strong>&bull; 项目一:</strong>
       <ul>
       	<img src="https://github.com/seteny/myCurriculaVitae/blob/master/images/IMG_0002.jpg?raw=true" width="140px" align="right" />
-      	  <p>&loz; 项目名称:  <b>医之佳</b></p>
-          <p>&loz; 项目描述:  <font size="3px">医之佳是零距离医生、医患移动诊疗沟通应用软件;应用主要提供给患者和医生使用;在应用中可以在线咨询医生,预约医生诊疗,问吧质询等服务.</font></p>
+      	  <p>&loz; 项目名称:  <strong>医之佳</strong></p>
+          <p>&loz; 项目描述:  医之佳是零距离医生、医患移动诊疗沟通应用软件;应用主要提供给患者和医生使用;在应用中可以在线咨询医生,预约医生诊疗,问吧质询等服务.</p>
           <p>&loz; 应用技术:</p>
-          <p>
+          <div id="technique">
+            <p >
           		&radic; 实现第三方登陆及分享功能...<br />
           		&radic; 实现界面优化<br />
           		&radic; .....<br />
           		&radic; ...<br />
           		&radic; ...<br />
-          </p>
-          
+           </p>
+          </div>
       </ul>
       </li>
       <br /><br /><br />
@@ -201,11 +202,13 @@ body{
             <p >&loz; 项目名称:</p>
             <p >&loz; 项目描述:</p>
             <p >&loz; 应用技术:</p>
+             <div id="technique">
             <p>
             &radic;	完成项目的主要UI框架搭建<br />
             	&radic; 封装了一套完整的tabBar框架<br/>
             &radic; 自定义的本地数据缓存机制大大提升了各客户端及服务器之间的通讯性能<br />
             </p>
+            </div>
        </ul>
       </li>
       <br /><br /><br />
